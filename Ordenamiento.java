@@ -1,5 +1,4 @@
 package correccionoredenamiento;
-
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -7,23 +6,22 @@ public class Ordenamiento {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Pedir tamaño del arreglo
+
         System.out.print("Ingrese el tamaño del arreglo: ");
         int n = sc.nextInt();
 
         int arr[] = new int[n];
 
-        // Llenar el arreglo
+
         System.out.println("Ingrese los elementos:");
         for (int i = 0; i < n; i++) {
             System.out.print("Elemento [" + i + "]: ");
             arr[i] = sc.nextInt();
         }
 
-        // Ordenar
         ordenar(arr);
 
-        // Mostrar resultado
+
         System.out.println("Arreglo ordenado:");
         System.out.println(Arrays.toString(arr));
     }
