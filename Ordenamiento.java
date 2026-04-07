@@ -13,7 +13,20 @@ public class Ordenamiento {
 
         int arr[] = new int[n];
 
-       
+        // Llenar el arreglo
+        System.out.println("Ingrese los elementos:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Elemento [" + i + "]: ");
+            arr[i] = sc.nextInt();
+        }
+
+        // Ordenar
+        ordenar(arr);
+
+        // Mostrar resultado
+        System.out.println("Arreglo ordenado:");
+        System.out.println(Arrays.toString(arr));
+    }
 
     private static void ordenar(int v[]) {
         for (int i = 0; i < v.length - 1; i++) {
